@@ -139,8 +139,8 @@ class bcolors:#definition des couleurs
     UNDERLINE = '\033[4m'
 try:
  choix = sys.argv[1]
-except IOError,e:
-  print str(e)
+except:
+  choix=""
   menu(0)
 if choix=="--dork":
   dork()
