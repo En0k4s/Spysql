@@ -1,20 +1,6 @@
 #!/usr/bin/pythons
 """
-import requests
-from bs4 import BeautifulSoup as sp
-a = raw_input("enter dork : ")
-b = 0
-while b<100:
-  try:
-    r = requests.get("http://www.ask.com/web?q="+str(a)+"&page="+str(b))
-  except:
-    break
-  
-  m = str(r.text)
-  soup = sp(m)
-  for i in soup.find_all("p",{"class":"web-result-url"}):
-      print i.text
-  b+=1
+author: Enokas Worm
   """
 import os,sys
 try:
